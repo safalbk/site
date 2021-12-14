@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <style>
-#blb
-{
-width: 100%;
-  margin-right: 10px;
+.wish {
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  z-index: -1;
+  width:100%;
+}
+.blb {
+  margin-right: 120px;
+  
+}
+.cake {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
 }
 body {
   background-image: url('assets/bg.jpg');
@@ -24,33 +37,55 @@ body {
   position: absolute;
   background-color: red;
 }
+.baloon {
+ 
+bottom:-500px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 12s;
+}
+
+@keyframes example {
+   0%   {left:0px; bottom:-500px;}
+
+  100% { left:0px; bottom:1000px;}
+}
 </style>
 <head>
 <script type="text/javascript" src="message.js"></script>  
 </head>
 
 <body onload="off()">
+<audio id="myAudio">
+  <source src="hbd.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 <div id ="blb">
-<img id ="bulb1" src="assets/bulb_blue.png" alt="bulb">
-<img id ="bulb2" src="assets/bulb_green.png" alt="bulb">
-<img id ="bulb3" src="assets/bulb_orange.png" alt="bulb">
-<img id ="bulb4" src="assets/bulb_pink.png" alt="bulb">
-<img id ="bulb5" src="assets/bulb_red.png" alt="bulb">
-<img id ="bulb6" src="assets/bulb_yellow.png" alt="bulb">
+<img class="blb" id ="bulb1" src="assets/bulb_blue.png" alt="bulb">
+<img class="blb" id ="bulb2" src="assets/bulb_green.png" alt="bulb">
+<img class="blb" id ="bulb3" src="assets/bulb_orange.png" alt="bulb">
+<img class="blb" id ="bulb4" src="assets/bulb_pink.png" alt="bulb">
+<img class="blb" id ="bulb5" src="assets/bulb_red.png" alt="bulb">
+<img class="blb" id ="bulb6" src="assets/bulb_yellow.png" alt="bulb">
 </div>
 <div id ="welcome">
-<img id ="bulb6" src="assets/banner.png" alt="bulb">
+<img  src="assets/banner.png" alt="bulb">
+<img  src="assets/banner.png" alt="bulb">
+<img  src="assets/banner.png" alt="bulb">
 
+
+<img  class="baloon" src="assets/Balloon-Border.png" alt="bulb">
+
+<img class="cake" src="assets/cakes.png" alt="bulb">
 </div>
+<img  class="baloon" src="assets/Balloon-Border.png" alt="bulb">
+
+
+<img   class="wish" src="assets/wish.jpg" alt="bulb">
 
 
 
-<p>
-<button onclick="msg()">Click Me</button> 
-</p>
-
-<div id ="myContainer">
-<div id ="myAnimation"></div>
 
 
 </div>
