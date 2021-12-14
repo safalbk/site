@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<style>
+#blb
+{
+width: 100%;
+  margin-right: 10px;
+}
+body {
+  background-image: url('assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+#myContainer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<head>
+<script type="text/javascript" src="message.js"></script>  
+</head>
+
+<body onload="off()">
+<div id ="blb">
+<img id ="bulb1" src="assets/bulb_blue.png" alt="bulb">
+<img id ="bulb2" src="assets/bulb_green.png" alt="bulb">
+<img id ="bulb3" src="assets/bulb_orange.png" alt="bulb">
+<img id ="bulb4" src="assets/bulb_pink.png" alt="bulb">
+<img id ="bulb5" src="assets/bulb_red.png" alt="bulb">
+<img id ="bulb6" src="assets/bulb_yellow.png" alt="bulb">
+</div>
+<div id ="welcome">
+<img id ="bulb6" src="assets/banner.png" alt="bulb">
+
+</div>
+
+
+
+<p>
+<button onclick="msg()">Click Me</button> 
+</p>
+
+<div id ="myContainer">
+<div id ="myAnimation"></div>
+
+
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>
