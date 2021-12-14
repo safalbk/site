@@ -1,4 +1,6 @@
 var on=0;
+var play=0;
+
 function off() {
 		
             var refresh = 1000; // Refresh rate in milli seconds
@@ -7,7 +9,11 @@ function off() {
 
         }
 function bulb(){ 
-
+ if (play == 0) {
+	 var x = document.getElementById("myAudio"); 
+  x.play();
+  play=1;
+ }
  if (on == 0) {
 document.getElementById('bulb1').src='assets/bulb.png' ;
 document.getElementById('bulb2').src='assets/bulb.png' ;
@@ -37,11 +43,9 @@ document.getElementById('bulb6').src='assets/bulb_yellow.png' ;
 	
 	off();
 }  
-function bulboff(){  
-document.getElementById('bulb1').src='assets/bulb.png' ;
-bulb1();
-off();
-
+function dgfg(){  
+var x = document.getElementById("myAudio"); 
+  x.play(); 
 }  
 var id = null;
 function myMove() {
